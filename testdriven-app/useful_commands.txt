@@ -1,0 +1,6 @@
+sudo docker-compose -f docker-compose-dev.yml build
+sudo docker-compose -f docker-compose-dev.yml up -d
+sudo docker-compose -f docker-compose-dev.yml up -d --build
+sudo docker-compose -f docker-compose-dev.yml logs
+sudo docker-compose -f docker-compose-dev.yml exec users python manage.py test
+sudo docker-compose -f docker-compose-dev.yml exec users flask shell
